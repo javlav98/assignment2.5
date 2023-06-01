@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/8a4506393a.js" crossorigin="anonymous"></script>
+
 
     <style>
         * {
@@ -21,6 +23,48 @@
             height: 100vh;
         }
 
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 20%;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+
+        .calculator {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
         
 
         
@@ -32,18 +76,25 @@
     <div class="container">
         <div class="calculator">
             <h1>Basic Calulator</h1>
+
             <!--Input-->
-            <input type="number" class="num1">
-            <input type="number" class="num2">
+            <div class="container1">
+                <input type="number" class="num1">
+                <input type="number" class="num2">
+            </div>
 
             <!--Button-->
-            <button class="add">Add</button>
-            <button class="subtract">Subtract</button>
-            <button class="multiply">Multiply</button>
-            <button class="divide">Divide</button>
+            <div class="container2">
+                <button class="add"><i class="fa-solid fa-plus"></i></button>
+                <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                <button class="multiply"><i class="fa-solid fa-xmark"></i></button>
+                <button class="divide"><i class="fa-solid fa-divide"></i></button>
+            </div>
 
             <!--Output-->
-            <p>Answer:<span class="output"></span></p>
+            <div class="container3">
+                <p>Answer:<span class="output"></span></p>
+            </div>
         </div>
     </div>
 
